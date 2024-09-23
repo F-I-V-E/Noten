@@ -1,0 +1,28 @@
+﻿<Window x:Class="Notendurchschnitt.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Notendurchschnitt"
+        mc:Ignorable="d"
+         Title="Notendurchschnitt berechnen" Height="310" Width="340" FontSize="14" Background="Bisque">
+    <Grid>
+        <Menu>
+            <MenuItem Header="Datei">
+                <MenuItem Name="muExport" Header="exportieren" Click="Export"></MenuItem>
+                <MenuItem Name="muImport" Header="importieren" Click="Import"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Label x:Name="lblAnzahlNoten" Content="X Noten eingetragen" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.264,-0.365"/>
+        <Label Content="Note    Gewicht" HorizontalAlignment="Left" Margin="9,63,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.264,-0.365"/>
+        <Label Content="Neue Note" HorizontalAlignment="Left" Margin="145,63,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.264,-0.365"/>
+        <Label Content="Gewicht" HorizontalAlignment="Left" Margin="241,63,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.264,-0.365"/>
+        <ListBox x:Name="lbxNoten" Height="134" VerticalAlignment="Top" Margin="15,92,0,0" HorizontalAlignment="Left" Width="102" SelectionChanged="lbxNoten_SelectionChanged"/>
+        <Label Content="Schnitt:" HorizontalAlignment="Left" Margin="9,231,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.264,-0.365"/>
+        <TextBox x:Name="tbNeueNote" HorizontalAlignment="Left" Margin="150,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73"/>
+        <TextBox x:Name="tbGewicht" HorizontalAlignment="Left" Margin="246,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66"/>
+        <TextBox x:Name="tbSchnitt" HorizontalAlignment="Left" Margin="65,235,0,0" Text="X" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" IsReadOnly="True"/>
+        <Button x:Name="bnEintragen" Content="Eintragen" HorizontalAlignment="Left" Margin="150,125,0,0" VerticalAlignment="Top" Width="162" Click="hinzufuegen"/>
+        <Button x:Name="bnLoeschen" Content="Ausgewählte löschen" HorizontalAlignment="Left" Margin="150,203,0,0" VerticalAlignment="Top" Width="162" Click="loeschen"/>
+    </Grid>
+</Window>

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "KySQx0UIYn03PdN9h2JXuMZkvg/9VCYF5sgrGYp7IBtCi2nwKBrNY+DDqmQMtd+KuPe/PAR/+UfWgKKCXATcCg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\Notendurchschnitt\\Notendurchschnitt\\Notendurchschnitt.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
